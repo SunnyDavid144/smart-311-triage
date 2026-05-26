@@ -128,7 +128,11 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <div className="w-2 h-2 rounded-full bg-[var(--foreground)]" />
+              <motion.div
+                className="w-2 h-2 rounded-full bg-red-500"
+                animate={{ opacity: [1, 0.3, 1] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              />
               <span className="text-xs font-medium tracking-widest uppercase text-[var(--muted)]">
                 Smart 311
               </span>
